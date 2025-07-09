@@ -13,6 +13,7 @@ Dionysia Petropoulou, 2025
 - Deep Learning for TSC
 - Example Architectures
 - Key Findings
+- Interpretability
 - Conclusions
 - References & Questions
 
@@ -44,25 +45,17 @@ Traditional methods:
 
 - Question: Can it match or beat state-of-the-art TSC methods?
 
-```markdown
-    ![Histogram of the solution of a bistable ODE](figures/fig2.png)
-```
-
 ![Histogram](figures/fig2.png)
 ---
 
 # Main Contributions
-
- ```markdown
-    ![Histogram of the solution of a bistable ODE](figures/fig5.png)
-```
 
 ![Histogram](figures/fig5.png)
 ---
 
 # Background: What is TSC?
 
-This is the parent of vertical slides.
+TSC = Learn patterns in sequences to predict classes.
 
 --
 ## Vertical slide 1
@@ -80,14 +73,10 @@ Another vertical slide under the parent slide.
 
 Add a figure with Markdown code
 
-```markdown
-    ![Histogram of the solution of a bistable ODE](figures/fig1.png)
-```
-
 ![Histogram](figures/fig1.png)
 ---
 
-#  Example Architectures
+# Example Architectures
 
 Different model types tested:
 
