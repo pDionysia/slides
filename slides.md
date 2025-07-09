@@ -1,33 +1,66 @@
-# Presentation slides with Reveal.js
+# Deep learning for time series classification: a review
 
 Dionysia Petropoulou, 2025
 
 ---
 
-# Why Reveal.js?
+# Table of contents
 
-- Cross-platform
-- Markdown-based
-- Supports math with LaTeX
-- Looks great
-
----
-
-# Inline Math
-
-Einstein's formula: $E = mc^2$
-
----
-
-# Block Math
-
-$$
-\int_0^\infty e^{-x^2} dx = \frac{\sqrt{\pi}}{2}
-$$
+- Motivation & Problem
+- Why Deep Learning?
+- Main Contributions
+- Background: What is TSC?
+- Deep Learning for TSC
+- Example Architectures
+- Key Findings
+- Conclusions
+- References & Questions
 
 ---
 
-# Vertical slides
+#  Why Time Series Classification?
+
+Time series data is everywhere:
+
+- Health (ECG)
+
+- Finance (stocks)
+
+- Wearable sensors
+
+Traditional methods:
+
+- NN-DTW
+
+- HIVE-COTE (accurate but slow/complex)
+
+---
+
+# Why Deep Learning?
+
+- Huge success in images, speech, text
+
+- Learns features automatically
+
+- Question: Can it match or beat state-of-the-art TSC methods?
+
+```markdown
+    ![Histogram of the solution of a bistable ODE](figures/fig2.png)
+```
+
+![Histogram](figures/fig2.png)
+---
+
+# Main Contributions
+
+ ```markdown
+    ![Histogram of the solution of a bistable ODE](figures/fig5.png)
+```
+
+![Histogram](figures/fig5.png)
+---
+
+# Background: What is TSC?
 
 This is the parent of vertical slides.
 
@@ -43,155 +76,87 @@ Another vertical slide under the parent slide.
 
 ---
 
-# Add figures
+# Deep Learning for TSC
 
 Add a figure with Markdown code
 
 ```markdown
-    ![Histogram of the solution of a bistable ODE](figures/demo.png)
+    ![Histogram of the solution of a bistable ODE](figures/fig1.png)
 ```
 
-![Histogram](figures/demo.png)
-
---
-
-or with HTML code for more control
-
-```html
-<img src="figures/demo.png" alt="Histogram" width="400">
-```
-
-<img src="figures/demo.png" alt="Histogram" width="400">
-
---
-
-or with percentage
-
-```html
-<img src="figures/demo.png" alt="Histogram" style="width:40%">
-```
-
-<img src="figures/demo.png" alt="Histogram" style="width:40%">
-
---
-
-You can add a caption like this
-```html
-<figure>
-  <img src="figures/demo.png" alt="Time series" style="width:70%">
-  <figcaption>Figure 1: Histogram of the solution of a bistable ODE</figcaption>
-</figure>
-```
-
-<figure>
-  <img src="figures/demo.png" alt="Time series" style="width:70%">
-  <figcaption>Figure 1: Histogram of the solution of a bistable ODE</figcaption>
-</figure>
-
+![Histogram](figures/fig1.png)
 ---
 
-# Show a video
+#  Example Architectures
 
-```html
-<video src="media/video.mp4" autoplay muted loop style="width: 60%"></video>
-```
+Different model types tested:
 
-<video src="media/video.mp4" autoplay muted loop style="width: 60%"></video>
+- MLP
 
+- CNN variants
 
+- Echo State Networks
+--
+
+![Histogram](figures/fig3.png)
+--
+
+![Histogram](figures/fig4.png)
 ---
 
-# Code blocks
+# Key Findings
 
-<pre><code class="language-python" data-trim>
-def fibonacci(n):
-    if n <= 1:
-        return n
-    return fibonacci(n-1) + fibonacci(n-2)
-</code></pre>
+- Deep learning models outperform NN-DTW
 
+- Comparable to HIVE-COTE
 
+- Much faster and scalable
+
+- Good on multivariate data
+
+- Sensitive to initialization
+---
+
+# Interpretability
+
+Black-box problem in DNNs
+
+- Solution: Class Activation Maps (CAM)
+
+- Highlights important time steps
+
+- Improves trust
 --
 
-# Code blocks with highlighting
+![Histogram](figures/fig13.png)
+---
 
-<pre><code class="language-python" data-trim data-line-numbers="3,5-6,10">
-import numpy as np
-import matplotlib.pyplot as plt
+# Conclusions
 
-def simulate_ode(f, y0, t):
-    """Simple forward Euler ODE solver."""
-    y = np.zeros_like(t)
-    y[0] = y0
-    for i in range(1, len(t)):
-        dt = t[i] - t[i-1]
-        y[i] = y[i-1] + dt * f(t[i-1], y[i-1])
-    return y
+Deep learning is effective:
 
-# Example usage
-f = lambda t, y: -0.5 * y
-t = np.linspace(0, 10, 100)
-y = simulate_ode(f, 1.0, t)
+- High accuracy
 
-plt.plot(t, y)
-plt.title("Exponential Decay")
-plt.xlabel("Time")
-plt.ylabel("y(t)")
-plt.grid()
-plt.show()
-</code></pre>
+- Scalable
 
+- Less manual feature engineering
 
---
+Challenges remain:
 
-<section>
-  <h3>Code blocks with animations</h3>
+- Overfitting
 
-  <div class="fragment">
-    <pre><code class="language-python" data-trim data-line-numbers>
-import numpy as np
-import matplotlib.pyplot as plt
-    </code></pre>
-  </div>
+- Interpretability
 
-  <div class="fragment">
-    <pre><code class="language-python" data-trim data-line-numbers>
-def simulate_ode(f, y0, t):
-    """Simple forward Euler ODE solver."""
-    y = np.zeros_like(t)
-    y[0] = y0
-    for i in range(1, len(t)):
-        dt = t[i] - t[i-1]
-        y[i] = y[i-1] + dt * f(t[i-1], y[i-1])
-    return y
-    </code></pre>
-  </div>
-
-  <div class="fragment">
-    <pre><code class="language-python" data-trim data-line-numbers>
-f = lambda t, y: -0.5 * y
-t = np.linspace(0, 10, 100)
-y = simulate_ode(f, 1.0, t)
-    </code></pre>
-  </div>
-
-  <div class="fragment">
-    <pre><code class="language-python" data-trim data-line-numbers>
-plt.plot(t, y)
-plt.title("Exponential Decay")
-plt.xlabel("Time")
-plt.ylabel("y(t)")
-plt.grid()
-plt.show()
-    </code></pre>
-  </div>
-</section>
+- Transfer learning
 
 
 
 ---
 
-### 🦧 That is all 🦧
+### 🦧 Thank you! 🦧
+
+Questions?
+
 
 
 
