@@ -58,26 +58,36 @@ Traditional methods:
 TSC = Learn patterns in sequences to predict classes.
 
 --
-## Vertical slide 1
+## What is Time Series Classification?
 
-\begin{align*}
-&\textbf{Univariate:} \quad X = [x_1, \ldots, x_T] \\
-&\textbf{Multivariate:} \quad X = [X^1, \ldots, X^M] \\
-&\textbf{Dataset:} \quad D = \{ (X_i, Y_i) \}_{i=1}^N \\
-&\textbf{Objective:} \quad p(Y \mid X)
-\end{align*}
+
+- \textbf{Univariate:} \quad X = [x_1, \ldots, x_T] 
+- \textbf{Multivariate:} \quad X = [X^1, \ldots, X^M] 
+- \textbf{Dataset:} \quad D = \{ (X_i, Y_i) \}_{i=1}^N 
+- \textbf{Objective:} \quad p(Y \mid X)
+
 
 
 --
-## Vertical slide 2
+## The multilayer perceptron
 
-Another vertical slide under the parent slide.
+- \textbf{Deep network composition:} 
+f_L(\theta_L, x) = f_{L-1}(\theta_{L-1}, \ldots, f_1(\theta_1, x)) 
+- \textbf{Layer activation (MLP):} 
+ A^{(l)} = f(\omega^{(l)} * X + b^{(l)}) 
 
+- \textbf{Cross-entropy loss:} L(X) = -\sum_{j=1}^K Y_j \log(\hat{Y}_j) \\[10pt]
+- \textbf{Dataset loss:} 
+ J(\Omega) = \frac{1}{N} \sum_{n=1}^N L(X_n) \\[10pt]
+- \textbf{Gradient descent update:} 
+ \omega \leftarrow \omega - \alpha \cdot \frac{\partial J}{\partial \omega},
+  \quad \forall \omega \in \Omega
+--
+
+![Histogram](figures/mlp.png)
 ---
 
 # Deep Learning for TSC
-
-Add a figure with Markdown code
 
 ![Histogram](figures/fig1.png)
 ---
