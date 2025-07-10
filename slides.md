@@ -61,27 +61,26 @@ TSC = Learn patterns in sequences to predict classes.
 ## What is Time Series Classification?
 
 
-- \textbf{Univariate:} \quad X = [x_1, \ldots, x_T] 
-- \textbf{Multivariate:} \quad X = [X^1, \ldots, X^M] 
-- \textbf{Dataset:} \quad D = \{ (X_i, Y_i) \}_{i=1}^N 
-- \textbf{Objective:} \quad p(Y \mid X)
+- Univariate: $\quad X = [x_1, \ldots, x_T] $
+- Multivariate: $\quad X = [X^1, \ldots, X^M] $
+- Dataset: $\quad D = \{ (X_i, Y_i) \}_{i=1}^N $
+- Objective: $\quad p(Y \mid X)$
 
 
 
 --
 ## The multilayer perceptron
 
-- \textbf{Deep network composition:} 
-f_L(\theta_L, x) = f_{L-1}(\theta_{L-1}, \ldots, f_1(\theta_1, x)) 
-- \textbf{Layer activation (MLP):} 
- A^{(l)} = f(\omega^{(l)} * X + b^{(l)}) 
+- Deep network composition: 
+$f_L(\theta_L, x) = f_{L-1}(\theta_{L-1}, \ldots, f_1(\theta_1, x))$ 
+- Layer activation (MLP):
+ $A^{(l)} = f(\omega^{(l)} * X + b^{(l)}) $
 
-- \textbf{Cross-entropy loss:} L(X) = -\sum_{j=1}^K Y_j \log(\hat{Y}_j) \\[10pt]
-- \textbf{Dataset loss:} 
- J(\Omega) = \frac{1}{N} \sum_{n=1}^N L(X_n) \\[10pt]
-- \textbf{Gradient descent update:} 
- \omega \leftarrow \omega - \alpha \cdot \frac{\partial J}{\partial \omega},
-  \quad \forall \omega \in \Omega
+- Cross-entropy loss: $L(X) = -\sum_{j=1}^K Y_j \log(\hat{Y}_j)$
+- Dataset loss:
+ $J(\Omega) = \frac{1}{N} \sum_{n=1}^N L(X_n) $
+- Gradient descent update:
+ $\omega \leftarrow \omega - \alpha \cdot \frac{\partial J}{\partial \omega},\quad \forall \omega \in \Omega $
 --
 
 ![Histogram](figures/mlp.png)
