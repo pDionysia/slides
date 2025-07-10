@@ -1,5 +1,5 @@
 # Deep learning for time series classification: a review
-Hassan I. Fawaz et al. (2019)
+Hassan I. Fawaz et al. (2019) <br>
 Dionysia Petropoulou, 2025
 
 ---
