@@ -1,5 +1,5 @@
 # Deep learning for time series classification: a review
-
+Hassan I. Fawaz et al. (2019)
 Dionysia Petropoulou, 2025
 
 ---
@@ -15,7 +15,7 @@ Dionysia Petropoulou, 2025
 - Key Findings
 - Interpretability
 - Conclusions
-- References & Questions
+- Questions
 
 ---
 
