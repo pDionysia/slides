@@ -60,7 +60,13 @@ TSC = Learn patterns in sequences to predict classes.
 --
 ## Vertical slide 1
 
-This is a vertical slide under the parent slide.
+\begin{align*}
+&\textbf{Univariate:} \quad X = [x_1, \ldots, x_T] \\
+&\textbf{Multivariate:} \quad X = [X^1, \ldots, X^M] \\
+&\textbf{Dataset:} \quad D = \{ (X_i, Y_i) \}_{i=1}^N \\
+&\textbf{Objective:} \quad p(Y \mid X)
+\end{align*}
+
 
 --
 ## Vertical slide 2
