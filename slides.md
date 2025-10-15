@@ -41,7 +41,7 @@ Dionysia Petropoulou, 2025
 
   - Extend dataset benchmark with 30 new problems.
 
-  ---
+---
 
 # Definitions & Terminology
 
@@ -127,10 +127,14 @@ $$
 H-InceptionTime = a hybrid version of the InceptionTime model.
 - It combines the strengths of InceptionTime (multi-scale feature learning) and ResNet (residual connections that stabilize deep training).
 
+--
+
 # LITEtime (Light Inception with boosTing tEchniques).
 
 - LITE: nearly the same accuracy, much faster and easier to train.
 Great for real-time or low-resource applications.
+
+---
 
 # Conclusions & Insights
 
