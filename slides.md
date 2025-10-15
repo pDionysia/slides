@@ -1,4 +1,4 @@
-# Bake off redux: a review and experimental evaluation of recent time series <br>
+# Bake off redux: a review and experimental evaluation of recent time series 
 # classification  algorithms
 Matthew Middlehurst, Patrick Schafer, Anthony Bagnall (2024) <br>
 Dionysia Petropoulou, 2025
@@ -10,12 +10,7 @@ Dionysia Petropoulou, 2025
 - Definitions & Terminology
 - Experimental Setup
 - Taxonomy of Algorithms
-- Distance & Feature based Methods
-- Interval & Shapelet-Based Methods
-- Dictionary & Convolution-Based Methods
-- Deep Learning-Based Methods
-- Hybrid & Ensemble Approaches
-- Results Summary
+- Deep Learning Methods
 - Conclusions & Insights
 
 ---
@@ -48,7 +43,7 @@ Dionysia Petropoulou, 2025
 
   ---
 
-  # Definitions & Terminology
+# Definitions & Terminology
 
   - Time Series (TS): ordered sequence of values $A = [a_1, \ldots, a_m]$
   - Multivariate TS (MTS): each observation $a_i \in \mathbb{R}^d$
@@ -65,7 +60,7 @@ $$
 
 --
 
-![Histogram](figures/fig5.png)
+![Histogram](figures/sliding_window.png)
 
 ---
 
@@ -103,16 +98,53 @@ $$
 
 ---
 
-# Distance & Feature based Methods
+# Deep Learning Approaches Tested
+
+![Histogram](figures/DL_classifiers.png)
+
+--
+
+# Convolutional Neural Network
+
+![Histogram](figures/fig3.png)
+
+--
+
+# Residual Network (ResNet)
+
+![Histogram](figures/resnet.png)
+
+--
+
+# Inception Time
+
+![Histogram](figures/inctime.png)
+
+--
+
+# H-InceptionTime (Hybrid inception)
+
+H-InceptionTime = a hybrid version of the InceptionTime model.
+- It combines the strengths of InceptionTime (multi-scale feature learning) and ResNet (residual connections that stabilize deep training).
+
+# LITEtime (Light Inception with boosTing tEchniques).
+
+- LITE: nearly the same accuracy, much faster and easier to train.
+Great for real-time or low-resource applications.
+
+# Conclusions & Insights
+
+- **H-inception time** delivers the **highest accuracy** among tested models.  
+- Combines:
+  - InceptionTime’s **multi-scale pattern detection**, and  
+  - ResNet’s **residual connections** for stable training.  
+- Efficient thanks to **bottleneck layers**.  
+- Outperforms both **ResNet** and **plain InceptionTime**.  
+- **Best trade-off** between accuracy, stability, and computation cost.
 
 ---
 
-# Interval & Shapelet-Based Methods
-# Dictionary & Convolution-Based Methods
-# Deep Learning-Based Methods
-# Hybrid & Ensemble Approaches
-# Results Summary
-# Conclusions & Insights
+Thank you!
 
 
 
