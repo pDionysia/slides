@@ -1,165 +1,131 @@
-# Deep learning for time series classification: a review
-Hassan I. Fawaz et al. (2019) <br>
+# Bake off redux: a review and experimental evaluation of recent time series <br>
+# classification  algorithms
+Matthew Middlehurst, Patrick Schafer, Anthony Bagnall (2024) <br>
 Dionysia Petropoulou, 2025
 
 ---
 
 # Table of contents
-
-- Motivation & Problem
-- Why Deep Learning?
-- Main Contributions
-- Background: What is TSC?
-- Deep Learning for TSC
-- Example Architectures
-- Key Findings
-- Interpretability
-- Conclusions
-- Questions
-
----
-
-#  Why Time Series Classification?
-
-Time series data is everywhere:
-
-- Health (ECG)
-
-- Finance (stocks)
-
-- Wearable sensors
-
-Traditional methods:
-
-- NN-DTW
-
-- HIVE-COTE (accurate but slow/complex)
+- Background & Objectives
+- Definitions & Terminology
+- Experimental Setup
+- Taxonomy of Algorithms
+- Distance & Feature based Methods
+- Interval & Shapelet-Based Methods
+- Dictionary & Convolution-Based Methods
+- Deep Learning-Based Methods
+- Hybrid & Ensemble Approaches
+- Results Summary
+- Conclusions & Insights
 
 ---
 
-# Why Deep Learning?
+# Motivation
 
-- Huge success in images, speech, text
+- Revisits the 2017 “bake-off” comparing 18 TSC algorithms on 85 datasets.
 
-- Learns features automatically
+- TSC field has expanded → 112 datasets, many new algorithms.
 
-- Question: Can it match or beat state-of-the-art TSC methods?
+- Goal: evaluate progress and identify state-of-the-art methods.
 
-![Histogram](figures/fig2.png)
 ---
 
-# Main Contributions
+# Background & Objectives
+
+- Time Series Classification (TSC): predicting class labels from sequential data.
+
+- 2017 bake-off: 5 categories (distance, interval, shapelet, dictionary, hybrid).
+
+- This study adds 3 new categories: convolution-based, feature-based, and deep learning.
+
+- Objectives:
+
+  - Review and evaluate new TSC algorithms (2017–2023).
+
+  - Compare to previous best-in-class.
+
+  - Extend dataset benchmark with 30 new problems.
+
+  ---
+
+  # Definitions & Terminology
+
+  - Time Series (TS): ordered sequence of values $A = [a_1, \ldots, a_m]$
+  - Multivariate TS (MTS): each observation $a_i \in \mathbb{R}^d$
+  - Dataset: collection of time series
+$$
+D = \{(A^{(i)}, y^{(i)})\}
+$$
+
+-  Subseries: contiguous subsequence A_{i,l}.
+
+- Sliding Window: generates all subseries of length l.
+- Convolution: sliding dot product between a kernel and a time series.
+- Dilation: spaced sampling for multi-scale analysis.
+
+--
 
 ![Histogram](figures/fig5.png)
----
-
-# Background: What is TSC?
-
-TSC = Learn patterns in sequences to predict classes.
-
---
-## What is Time Series Classification?
-
-
-- Univariate: $\quad X = [x_1, \ldots, x_T] $
-- Multivariate: $\quad X = [X^1, \ldots, X^M] $
-- Dataset: $\quad D = \{ (X_i, Y_i) \}_{i=1}^N $
-- Objective: $\quad p(Y \mid X)$
-
-
-
---
-## The multilayer perceptron
-
-- Deep network composition: 
-$f_L(\theta_L, x) = f_{L-1}(\theta_{L-1}, \ldots, f_1(\theta_1, x))$ 
-- Layer activation (MLP):
- $A^{(l)} = f(\omega^{(l)} * X + b^{(l)}) $
-
-- Cross-entropy loss: $L(X) = -\sum_{j=1}^K Y_j \log(\hat{Y}_j)$
-- Dataset loss:
- $J(\Omega) = \frac{1}{N} \sum_{n=1}^N L(X_n) $
-- Gradient descent update:
- $\omega \leftarrow \omega - \alpha \cdot \frac{\partial J}{\partial \omega},\quad \forall \omega \in \Omega $
---
-
-![Histogram](figures/mlp.png)
----
-
-# Deep Learning for TSC
-
-![Histogram](figures/fig1.png)
----
-
-# Example Architectures
-
-Different model types tested:
-
-- MLP
-
-- CNN variants
-
-- Echo State Networks
---
-
-![Histogram](figures/fig3.png)
---
-
-![Histogram](figures/fig4.png)
----
-
-# Key Findings
-
-- Deep learning models outperform NN-DTW
-
-- Comparable to HIVE-COTE
-
-- Much faster and scalable
-
-- Good on multivariate data
-
-- Sensitive to initialization
----
-
-# Interpretability
-
-Black-box problem in DNNs
-
-- Solution: Class Activation Maps (CAM)
-
-- Highlights important time steps
-
-- Improves trust
---
-
-![Histogram](figures/fig13.png)
----
-
-# Conclusions
-
-Deep learning is effective:
-
-- High accuracy
-
-- Scalable
-
-- Less manual feature engineering
-
-Challenges remain:
-
-- Overfitting
-
-- Interpretability
-
-- Transfer learning
-
-
 
 ---
 
-### 🦧 Thank you! 🦧
+# Experimental Setup
 
-Questions?
+- 112 datasets from UCR archive + 30 new datasets.
+
+- 30 resamples per dataset for reproducibility.
+
+- Metrics: Accuracy, Balanced Accuracy, AUROC, Negative Log Likelihood.
+
+- Benchmark: 1-NN Dynamic Time Warping (DTW).
+
+- Visual: schematic of critical difference plots or dataset table.
+
+---
+
+# Taxonomy of Algorithms
+
+- Distance-based
+
+- Feature-based
+
+- Interval-based
+
+- Shapelet-based
+
+- Dictionary-based
+
+- Convolution-based
+
+- Deep learning-based
+
+- Hybrid
+
+---
+
+# Distance & Feature based Methods
+
+---
+
+# Interval & Shapelet-Based Methods
+# Dictionary & Convolution-Based Methods
+# Deep Learning-Based Methods
+# Hybrid & Ensemble Approaches
+# Results Summary
+# Conclusions & Insights
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
