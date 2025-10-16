@@ -17,7 +17,8 @@ Dionysia Petropoulou, 2025
 
 # Motivation
 
-- Revisits the 2017 “bake-off” comparing 18 TSC algorithms on 85 datasets.
+- Revisits the 2017 “bake-off” comparing 18 Time Series Classification (TSC) algorithms
+ on 85 datasets.
 
 - TSC field has expanded → 112 datasets, many new algorithms.
 
@@ -52,7 +53,7 @@ $$
 D = \{(A^{(i)}, y^{(i)})\}
 $$
 
--  Subseries: contiguous subsequence A_{i,l}.
+-  Subseries: contiguous subsequence $A_{i,l}$.
 
 - Sliding Window: generates all subseries of length l.
 - Convolution: sliding dot product between a kernel and a time series.
@@ -145,6 +146,10 @@ Great for real-time or low-resource applications.
 - Efficient thanks to **bottleneck layers**.  
 - Outperforms both **ResNet** and **plain InceptionTime**.  
 - **Best trade-off** between accuracy, stability, and computation cost.
+
+--
+
+![Histogram](figures/ranking.png)
 
 ---
 
