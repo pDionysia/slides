@@ -217,15 +217,15 @@ Time Series → Convolution Layers → Pooling Layers → Fully Connected Layer 
 
 --
 
-Raw Time Series
-   ↓
-( CNN | ResNet | InceptionTime | Transformers )
-   ↓
-Automatically Learned Features
-   ↓
-Softmax / Dense Layer
-   ↓
-Predicted Class
+Raw Time Series <br>
+   ↓ <br>
+( CNN | ResNet | InceptionTime | Transformers ) <br>
+   ↓ <br>
+Automatically Learned Features <br>
+   ↓ <br>
+Softmax / Dense Layer <br>
+   ↓ <br>
+Predicted Class <br>
 
 --
 
