@@ -116,7 +116,8 @@ Key weakness: Computationally expensive for large datasets
 
 --
 
-Time Series -> Distance Measure (e.g., DTW) -> Nearest Neighbor Search -> Predicted Class
+Time Series → Distance Measure (e.g., DTW) → Nearest Neighbor Search → Predicted Class
+
 
 ---
 
@@ -133,7 +134,8 @@ Key weakness: May lose local/temporal structure
 
 --
 
-Time Series -> Feature Extraction (mean, std, entropy, etc.) -> Classifier (SVM/Random Forest) -> Predicted Class
+Time Series → Feature Extraction (mean, std, entropy, etc.) → Classifier (SVM/Random Forest) → Predicted Class
+
 
 ---
 
@@ -150,8 +152,8 @@ Key weakness: May miss patterns that shift over time
 
 --
 
-Time Series -> Select Intervals -> Extract Features per Interval -> Ensemble of 
-Classifiers -> Predicted Class
+Time Series → Select Intervals → Extract Features per Interval → Ensemble of Classifiers → Predicted Class
+
 
 ---
 
@@ -168,7 +170,8 @@ Key weakness: Discovering shapelets can be computationally expensive
 
 --
 
-Time Series -> Search for Discriminative Subseries (Shapelets) -> Measure Shapelet Distances -> Classifier -> Predicted Class
+Time Series → Search for Discriminative Subseries (Shapelets) → Measure Shapelet Distances → Classifier → Predicted Class
+
 
 ---
 
@@ -185,8 +188,8 @@ Key weakness: Loses precise numeric details due to discretization
 
 --
 
-Time Series -> Convert to Symbols (SAX/SFA) -> Build Histogram of Patterns -> Classifier
- -> Predicted Class
+Time Series → Convert to Symbols (SAX/SFA) → Build Histogram of Patterns → Classifier → Predicted Class
+
 
 ---
 
@@ -203,13 +206,26 @@ Key weakness: Requires more computational resources and data than classical meth
 
 --
 
-Time Series -> Convolution Layers -> Pooling Layers -> Fully Connected Layer -> Predicted Class
+Time Series → Convolution Layers → Pooling Layers → Fully Connected Layer → Predicted Class
+
 
 ---
 
 # Deep Learning-based
 
 ![Histogram](figures/DL_classifiers.png)
+
+--
+
+Raw Time Series
+   ↓
+( CNN | ResNet | InceptionTime | Transformers )
+   ↓
+Automatically Learned Features
+   ↓
+Softmax / Dense Layer
+   ↓
+Predicted Class
 
 --
 
