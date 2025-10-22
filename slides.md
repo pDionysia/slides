@@ -1,5 +1,4 @@
-# Bake off redux: a review and experimental evaluation of recent time series 
-# classification  algorithms
+# Bake off redux: a review and experimental evaluation of recent time series classification  algorithms
 Matthew Middlehurst, Patrick Schafer, Anthony Bagnall (2024) <br>
 Dionysia Petropoulou, 2025
 
@@ -118,6 +117,7 @@ Key weakness: Computationally expensive for large datasets
 
 Time Series → Distance Measure (e.g., DTW) → Nearest Neighbor Search → Predicted Class
 
+![Histogram](figures/DTW.png)
 
 ---
 
@@ -136,6 +136,7 @@ Key weakness: May lose local/temporal structure
 
 Time Series → Feature Extraction (mean, std, entropy, etc.) → Classifier (SVM/Random Forest) → Predicted Class
 
+![Histogram](figures/feature_based.png)
 
 ---
 
@@ -154,6 +155,7 @@ Key weakness: May miss patterns that shift over time
 
 Time Series → Select Intervals → Extract Features per Interval → Ensemble of Classifiers → Predicted Class
 
+![Histogram](figures/interval_based.png)
 
 ---
 
@@ -172,12 +174,13 @@ Key weakness: Discovering shapelets can be computationally expensive
 
 Time Series → Search for Discriminative Subseries (Shapelets) → Measure Shapelet Distances → Classifier → Predicted Class
 
+![Histogram](figures/shapelet.png)
 
 ---
 
 # Dictionary-based
 
-- Converts time series into a sequence of symbolic words using symbolic approximation (like SAX or SFA).
+- Converts time series into a sequence of symbolic words using for ex. Symbolic Fourrier Approximation.
 
 - Then builds a histogram of repeating patterns (like a bag-of-words in NLP).
 
@@ -188,8 +191,13 @@ Key weakness: Loses precise numeric details due to discretization
 
 --
 
-Time Series → Convert to Symbols (SAX/SFA) → Build Histogram of Patterns → Classifier → Predicted Class
+Time Series → Convert to Symbols (SFA) → Build Histogram of Patterns → Classifier → Predicted Class
 
+![Histogram](figures/dict_based.png)
+
+--
+
+![Histogram](figures/SFA.png)
 
 ---
 
@@ -208,6 +216,7 @@ Key weakness: Requires more computational resources and data than classical meth
 
 Time Series → Convolution Layers → Pooling Layers → Fully Connected Layer → Predicted Class
 
+![Histogram](figures/kernel_based.png)
 
 ---
 
@@ -263,7 +272,7 @@ Great for real-time or low-resource applications.
 
 # Conclusions & Insights
 
-- **H-inception time** delivers the **highest accuracy** among tested models.  
+- **H-inception time** delivers the **highest accuracy** among tested deep learning models.  
 - Combines:
   - InceptionTime’s **multi-scale pattern detection**, and  
   - ResNet’s **residual connections** for stable training.  
@@ -278,7 +287,7 @@ Great for real-time or low-resource applications.
 ---
 
 Thank you!
-
+![Histogram](figures/cute_mouse.png)
 
 
 
