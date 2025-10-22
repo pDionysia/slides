@@ -286,7 +286,7 @@ Great for real-time or low-resource applications.
 
 ---
 
-Thank you!
+Thank you! <br>
 ![Histogram](figures/cute_mouse.png)
 
 
