@@ -72,9 +72,28 @@ $$
 
 - Metrics: Accuracy, Balanced Accuracy, AUROC, Negative Log Likelihood.
 
-- Benchmark: 1-NN Dynamic Time Warping (DTW).
+- Benchmark: 1-Nearest Neighbour with Dynamic Time Warping (DTW).
 
 - Visual: schematic of critical difference plots or dataset table.
+
+-- 
+Original sequences: <br>
+A = [1, 2, 3] <br>
+B = [1, 1, 2, 3] <br>
+
+DTW Alignment (with stretching): <br>
+A: 1   →   1   →   2   →   3  <br>
+      ↘     ↓     ↘     ↘  <br>
+B:    1   → 1   → 2   → 3  <br>
+
+| Step | A Index | A Value | B Index | B Value | Alignment Action      | <br>
+| ---- | ------- | ------- | ------- | ------- | --------------------- | <br>
+| 1    | 1       | 1       | 1       | 1       | Match                 | <br>
+| 2    | 1       | 1       | 2       | 1       | Stretch A (stay on 1) | <br>
+| 3    | 2       | 2       | 3       | 2       | Match                 | <br>
+| 4    | 3       | 3       | 4       | 3       | Match                 | <br>
+
+
 
 ---
 
@@ -153,6 +172,10 @@ Key weakness: May miss patterns that shift over time
 
 --
 
+![Histogram](figures/noise_interval.png)
+
+--
+
 Time Series → Select Intervals → Extract Features per Interval → Ensemble of Classifiers → Predicted Class
 
 ![Histogram](figures/interval_based.png)
@@ -182,7 +205,7 @@ Time Series → Search for Discriminative Subseries (Shapelets) → Measure Shap
 
 - Converts time series into a sequence of symbolic words using for ex. Symbolic Fourrier Approximation.
 
-- Then builds a histogram of repeating patterns (like a bag-of-words in NLP).
+- Then builds a histogram of repeating patterns.
 
 - Classification is based on these word counts.
 
