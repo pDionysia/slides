@@ -77,6 +77,7 @@ $$
 - Visual: schematic of critical difference plots or dataset table.
 
 -- 
+
 Original sequences: <br>
 A = [1, 2, 3] <br>
 B = [1, 1, 2, 3] <br>
@@ -92,8 +93,6 @@ B:    1   → 1   → 2   → 3  <br>
 | 2    | 1       | 1       | 2       | 1       | Stretch A (stay on 1) | <br>
 | 3    | 2       | 2       | 3       | 2       | Match                 | <br>
 | 4    | 3       | 3       | 4       | 3       | Match                 | <br>
-
-
 
 ---
 
