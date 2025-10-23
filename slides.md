@@ -76,7 +76,7 @@ $$
 
 - Visual: schematic of critical difference plots or dataset table.
 
--- 
+--
 
 Original sequences: <br>
 A = [1, 2, 3] <br>
