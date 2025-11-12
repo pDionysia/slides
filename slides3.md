@@ -1,6 +1,6 @@
 # Bake off redux: a review and experimental evaluation of recent time series classification  algorithms
 Matthew Middlehurst, Patrick Schafer, Anthony Bagnall (2024) <br>
-Dionysia Petropoulou
+Dionysia Petropoulou, 2025
 
 ---
 
