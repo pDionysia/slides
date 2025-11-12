@@ -27,8 +27,22 @@ Measurement Plan (Chemicals Only):
 
 # Data Format
 
-csv files:
 ![Histogram](figures/data_format.png)
+
+--
+
+- Time delay → when each part of the pulse arrives
+- THz electric field → how strong the pulse is at that moment
+
+Together, they give the full time-domain waveform, which contains all the information about:
+
+- the sample
+
+- the chemicals
+
+- the SRRs
+
+- how they modify the THz wave
 
 ---
 
@@ -60,11 +74,10 @@ csv files:
 
 ## PART B — METAMATERIAL MEASUREMENTS (SRRs)
 
-SRR Wafer Overview:
+- SRRs: tiny metal rings with a gap
+- They behave like small antennas that have a specific resonant frequency in the THz range
 
-- 40 unique SRRs × 2 duplicates = 80
-
-- SRRs tuned across 0–5.5 THz
+- When something changes around them (like a chemical being deposited ) their resonance shifts, and we can measure that
 
 ---
 
@@ -90,12 +103,12 @@ SRR Wafer Overview:
 
 # Key Takeaways
 
-- THz measurements were performed on pure chemicals and metamaterial structures.
+- We collected THz time-domain signals from two types of samples: the pure chemicals on silicon, and later the SRR metamaterial structures
+- The chemical-only data show how each chemical and each concentration changes the THz pulse (its shape, amplitude, and timing)
+- The SRR data show how the metamaterial responds to its environment (first clean, then with ethanol) revealing how its resonance shifts in the THz range
 
-- Chemical-only measurements established baseline THz signatures across concentrations.
-
-- SRR-based measurements revealed the metamaterial resonance behavior under environmental loading (ethanol).
-
+Next step:
+- SRR data placing different concentration of chemicals
 ---
 
 ### Thank you!
