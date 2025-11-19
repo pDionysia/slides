@@ -89,12 +89,12 @@ Together, they give the full time-domain waveform, which contains all the inform
 
 <div style="display: flex; justify-content: space-around;">
 
-  <div style="width: 50%;">
+  <div style="width: 60%;">
     <h4>SRRs clear – Time Domain</h4>
     <img src="figures/SRRs_clear.png" style="width: 100%;">
   </div>
 
-  <div style="width: 50%;">
+  <div style="width: 60%;">
     <h4>SRRs ethanol – Time Domain</h4>
     <img src="figures/SRRs_ETHANOL.png" style="width: 100%;">
   </div>
