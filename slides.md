@@ -85,8 +85,6 @@ Together, they give the full time-domain waveform, which contains all the inform
 
 ---
 
-# SRR Measurement: Clear Wafer VS +600μL ethanol
-
 ![Histogram](figures/SRRs_clear.png)
 ![Histogram](figures/SRRs_ETHANOL.png)
 
