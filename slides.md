@@ -85,8 +85,21 @@ Together, they give the full time-domain waveform, which contains all the inform
 
 ---
 
-![Histogram](figures/SRRs_clear.png)
-![Histogram](figures/SRRs_ETHANOL.png)
+## SRR Results – clear vs ethanol
+
+<div style="display: flex; justify-content: space-around;">
+
+  <div style="width: 48%;">
+    <h4>SRRs clear – Time Domain</h4>
+    <img src="figures/SRRs_clear.png" style="width: 100%;">
+  </div>
+
+  <div style="width: 48%;">
+    <h4>SRRs ethanol – Time Domain</h4>
+    <img src="figures/SRRs_ETHANOL.png" style="width: 100%;">
+  </div>
+
+</div>
 
 --
 
