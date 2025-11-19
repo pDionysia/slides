@@ -46,29 +46,12 @@ Together, they give the full time-domain waveform, which contains all the inform
 
 ---
 
-# Ethanol (5 measurements)
+# Ethanol vs Acetamiprid 100000ppb (5 measurements)
+# Chemical Measurements – Time Domain
 
-![Histogram](figures/17_10_25-ethanol.png)
+<img src="figures/17_10_25-ethanol.png" style="width: 90%; display: block; margin: 0 auto 20px;">
 
---
-
-![Histogram](figures/17_10_25-ethanol_zoomed.png)
-
----
-
-# Increasing Concentration (Metalaxyl)
-
-![Histogram](figures/metalaxyl_inc_con.png)
-
---
-
-![Histogram](figures/metalaxyl_inc_con_zoomed.png)
-
----
-
-# Comparing Chemicals
-
-![Histogram](figures/comparison_of_chemicals.png)
+<img src="figures/17_10_25_Acetamiprid_100000ppb.png" style="width: 90%; display: block; margin: auto;">
 
 ---
 
@@ -89,12 +72,12 @@ Together, they give the full time-domain waveform, which contains all the inform
 
 <div style="display: flex; justify-content: space-around;">
 
-  <div style="width: 60%;">
+  <div style="width: 75%;">
     <h4>SRRs clear – Time Domain</h4>
     <img src="figures/SRRs_clear.png" style="width: 100%;">
   </div>
 
-  <div style="width: 60%;">
+  <div style="width: 75%;">
     <h4>SRRs ethanol – Time Domain</h4>
     <img src="figures/SRRs_ETHANOL.png" style="width: 100%;">
   </div>
@@ -103,20 +86,53 @@ Together, they give the full time-domain waveform, which contains all the inform
 
 --
 
-![Histogram](figures/SRRs_clear_FFT.png)
-![Histogram](figures/SRRs_ETHANOL_FFT.png)
+<div style="display: flex; justify-content: space-around;">
+
+  <div style="width: 75%;">
+    <h4>SRRs clear – FFT</h4>
+    <img src="figures/SRRs_clear_FFT.png" style="width: 100%;">
+  </div>
+
+  <div style="width: 75%;">
+    <h4>SRRs ethanol – FFT</h4>
+    <img src="figures/SRRs_ETHANOL_FFT.png" style="width: 100%;">
+  </div>
+
+</div>
 
 ---
 
 # SRR with 10ppb and 100 ppb of Acetamiprid
 
-![Histogram](figures/SRRs_10ppb_Acetamiprid.png)
-![Histogram](figures/SRRs_100ppb_Acetamiprid.png)
+<div style="display: flex; justify-content: space-around;">
+
+  <div style="width: 75%;">
+    <h4>SRRs 10ppb – Time Domain</h4>
+    <img src="figures/SRRs_10ppb_Acetamiprid.png" style="width: 100%;">
+  </div>
+
+  <div style="width: 75%;">
+    <h4>SRRs 100ppb – Time Domain</h4>
+    <img src="figures/SRRs_100ppb_Acetamiprid.png" style="width: 100%;">
+  </div>
+
+</div>
 
 --
 
-![Histogram](figures/SRRs_10ppb_Acetamiprid_FFT.png)
-![Histogram](figures/SRRs_100ppb_Acetamiprid_FFT.png)
+<div style="display: flex; justify-content: space-around;">
+
+  <div style="width: 75%;">
+    <h4>SRRs 10ppb – FFT</h4>
+    <img src="figures/SRRs_10ppb_Acetamiprid_FFT.png" style="width: 100%;">
+  </div>
+
+  <div style="width: 75%;">
+    <h4>SRRs 100ppb – FFT</h4>
+    <img src="figures/SRRs_100ppb_Acetamiprid_FFT.png" style="width: 100%;">
+  </div>
+
+</div>
 
 ---
 
