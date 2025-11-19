@@ -79,28 +79,51 @@ Together, they give the full time-domain waveform, which contains all the inform
 
 - When something changes around them (like a chemical being deposited ) their resonance shifts, and we can measure that
 
+--
+
+![Histogram](figures/wafer.png)
+
 ---
 
-# SRR Measurement: Clear Wafer (80 Curves)
+# SRR Measurement: Clear Wafer
 
-![Histogram](figures/Si_wafer_clear_SRRs.png)
+![Histogram](figures/SRRs_clear.png)
 
 --
 
-![Histogram](figures/Si_wafer_clear_SRRs_zoomed.png)
+![Histogram](figures/SRRs_clear_FFT.png)
 
 ---
 
 # SRR + Ethanol
 
-![Histogram](figures/Si_wafer_with_ethanol.png)
+![Histogram](figures/SRRs_ETHANOL.png)
 
 --
 
-![Histogram](figures/Si_wafer_with_ethanol_zoomed.png)
+![Histogram](figures/SRRs_ETHANOL_FFT.png)
 
 ---
 
+# SRR with 10ppb Acetamiprid
+
+![Histogram](figures/SRRs_10ppb_Acetamiprid.png)
+
+--
+
+![Histogram](figures/SRRs_10ppb_Acetamiprid_FFT.png)
+
+---
+
+# SRR with 100ppb Acetamiprid
+
+![Histogram](figures/SRRs_100ppb_Acetamiprid.png)
+
+--
+
+![Histogram](figures/SRRs_100ppb_Acetamiprid_FFT.png)
+
+---
 # Key Takeaways
 
 - We collected THz time-domain signals from two types of samples: the pure chemicals on silicon, and later the SRR metamaterial structures
