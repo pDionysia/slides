@@ -81,57 +81,44 @@ Together, they give the full time-domain waveform, which contains all the inform
 
 --
 
-![Histogram](figures/wafer.png)
+![Histogram](figures/wafer_2.png)
 
 ---
 
-# SRR Measurement: Clear Wafer
+# SRR Measurement: Clear Wafer VS +600μL ethanol
 
 ![Histogram](figures/SRRs_clear.png)
-
---
-
-![Histogram](figures/SRRs_clear_FFT.png)
-
----
-
-# SRR + Ethanol
-
 ![Histogram](figures/SRRs_ETHANOL.png)
 
 --
 
+![Histogram](figures/SRRs_clear_FFT.png)
 ![Histogram](figures/SRRs_ETHANOL_FFT.png)
 
 ---
 
-# SRR with 10ppb Acetamiprid
+# SRR with 10ppb and 100 ppb of Acetamiprid
 
 ![Histogram](figures/SRRs_10ppb_Acetamiprid.png)
-
---
-
-![Histogram](figures/SRRs_10ppb_Acetamiprid_FFT.png)
-
----
-
-# SRR with 100ppb Acetamiprid
-
 ![Histogram](figures/SRRs_100ppb_Acetamiprid.png)
 
 --
 
+![Histogram](figures/SRRs_10ppb_Acetamiprid_FFT.png)
 ![Histogram](figures/SRRs_100ppb_Acetamiprid_FFT.png)
 
 ---
-# Key Takeaways
 
-- We collected THz time-domain signals from two types of samples: the pure chemicals on silicon, and later the SRR metamaterial structures
-- The chemical-only data show how each chemical and each concentration changes the THz pulse (its shape, amplitude, and timing)
-- The SRR data show how the metamaterial responds to its environment (first clean, then with ethanol) revealing how its resonance shifts in the THz range
+# Summary / Conclusions
 
-Next step:
-- SRR data placing different concentration of chemicals
+- Time-domain signals look similar because chemical layer is thin
+
+- SRRs show clear resonance in FFT
+
+- Ethanol and acetamiprid shift the resonance
+
+- SRRs → excellent THz sensors
+
 ---
 
 ### Thank you!
