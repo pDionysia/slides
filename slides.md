@@ -47,17 +47,13 @@ Together, they give the full time-domain waveform, which contains all the inform
 ---
 
 # Ethanol vs Acetamiprid 100000ppb (5 measurements)
-## Chemical Measurements – Time Domain
+# Chemical Measurements – Time Domain
 
-<div style="display:flex; justify-content:space-around; align-items:center;">
+<img src="figures/17_10_25-ethanol.png" 
+     style="width:85%; max-height:42vh; display:block; margin:0 auto 2vh;">
 
-  <img src="figures/17_10_25-ethanol.png" 
-       style="width:40%; max-height:260px; object-fit:contain;">
-
-  <img src="figures/17_10_25_Acetamiprid_100000ppb.png" 
-       style="width:40%; max-height:260px; object-fit:contain;">
-
-</div>
+<img src="figures/17_10_25_Acetamiprid_100000ppb.png" 
+     style="width:85%; max-height:42vh; display:block; margin:0 auto;">
 
 ---
 
