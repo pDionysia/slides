@@ -69,71 +69,39 @@ Together, they give the full time-domain waveform, which contains all the inform
 
 ---
 
-## SRR Results – clear vs ethanol
+# SRR Results – clear vs ethanol
 
-<div style="display: flex; justify-content: space-around;">
+<img src="figures/SRRs_clear.png" 
+     style="width:85%; max-height:42vh; display:block; margin:0 auto 2vh;">
 
-  <div style="width: 75%;">
-    <h4>SRRs clear – Time Domain</h4>
-    <img src="figures/SRRs_clear.png" style="width: 100%;">
-  </div>
-
-  <div style="width: 75%;">
-    <h4>SRRs ethanol – Time Domain</h4>
-    <img src="figures/SRRs_ETHANOL.png" style="width: 100%;">
-  </div>
-
-</div>
+<img src="figures/SRRs_ETHANOL.png" 
+     style="width:85%; max-height:42vh; display:block; margin:0 auto;">
 
 --
 
-<div style="display: flex; justify-content: space-around;">
+<img src="figures/SRRs_clear_FFT.png" 
+     style="width:85%; max-height:42vh; display:block; margin:0 auto 2vh;">
 
-  <div style="width: 75%;">
-    <h4>SRRs clear – FFT</h4>
-    <img src="figures/SRRs_clear_FFT.png" style="width: 100%;">
-  </div>
-
-  <div style="width: 75%;">
-    <h4>SRRs ethanol – FFT</h4>
-    <img src="figures/SRRs_ETHANOL_FFT.png" style="width: 100%;">
-  </div>
-
-</div>
+<img src="figures/SRRs_ETHANOL_FFT.png" 
+     style="width:85%; max-height:42vh; display:block; margin:0 auto;">
 
 ---
 
 # SRR with 10ppb and 100 ppb of Acetamiprid
 
-<div style="display: flex; justify-content: space-around;">
+<img src="figures/SRRs_10ppb_Acetamiprid.png" 
+     style="width:85%; max-height:42vh; display:block; margin:0 auto 2vh;">
 
-  <div style="width: 75%;">
-    <h4>SRRs 10ppb – Time Domain</h4>
-    <img src="figures/SRRs_10ppb_Acetamiprid.png" style="width: 100%;">
-  </div>
-
-  <div style="width: 75%;">
-    <h4>SRRs 100ppb – Time Domain</h4>
-    <img src="figures/SRRs_100ppb_Acetamiprid.png" style="width: 100%;">
-  </div>
-
-</div>
+<img src="figures/SRRs_100ppb_Acetamiprid.png" 
+     style="width:85%; max-height:42vh; display:block; margin:0 auto;">
 
 --
 
-<div style="display: flex; justify-content: space-around;">
+<img src="figures/SRRs_10ppb_Acetamiprid_FFT.png" 
+     style="width:85%; max-height:42vh; display:block; margin:0 auto 2vh;">
 
-  <div style="width: 75%;">
-    <h4>SRRs 10ppb – FFT</h4>
-    <img src="figures/SRRs_10ppb_Acetamiprid_FFT.png" style="width: 100%;">
-  </div>
-
-  <div style="width: 75%;">
-    <h4>SRRs 100ppb – FFT</h4>
-    <img src="figures/SRRs_100ppb_Acetamiprid_FFT.png" style="width: 100%;">
-  </div>
-
-</div>
+<img src="figures/SRRs_100ppb_Acetamiprid_FFT.png" 
+     style="width:85%; max-height:42vh; display:block; margin:0 auto;">
 
 ---
 
