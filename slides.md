@@ -107,6 +107,10 @@ Together, they give the full time-domain waveform, which contains all the inform
 
 # Summary / Conclusions
 
+- Clear SRRs: ~1.15 THz
+- 100 ppb Acetamiprid: ~1.22 THz
+- The resonance shifts upward by ~0.05–0.07 THz (50–70 GHz) when we add 100 ppb of acetamiprid
+
 - Time-domain signals look similar because chemical layer is thin
 
 - SRRs show clear resonance in FFT
