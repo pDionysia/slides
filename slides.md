@@ -26,8 +26,24 @@ We test 5 models:
 - ResNet 
 - XceptionTime
 
+Using 7 classes: <br>
+0: clear, 1: Ethanol, 2: Acetamiprid 10ppb, 3: Acetamiprid 100ppb, 4: Acetamiprid 1000ppb, 5: Acetamiprid 10000ppb and 6: Acetamiprid 100000ppb
+
 --
 
 ![Histogram](figures/mult_res.png)
+
+---
+
+# Binary Classification Results
+
+We test the 5 models using 2 classes: <br>
+0: clear, Ethanol, Ethanol, Acetamiprid 10ppb <br>
+1: Acetamiprid 100ppb, Acetamiprid 1000ppb, Acetamiprid 10000ppb, Acetamiprid 100000ppb
+
+--
+
+![Histogram](figures/bin_res.png)
+
 
 
